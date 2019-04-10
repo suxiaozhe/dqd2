@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/middle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"></View>
+            <TextView
+                android:id="@+id/circle_left"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/middle"
+                android:layout_marginRight="60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="进圈" />
+
+            <TextView
+                android:id="@+id/circle_right"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/middle"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="精选" />
+
+            <View
+                android:id="@+id/xian1"
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/circle_left"
+                android:layout_alignLeft="@id/circle_left"
+                android:layout_marginTop="1dp"
+                android:background="@color/green"
+                ></View>
+            <View
+                android:id="@+id/xian2"
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/circle_right"
+                android:layout_alignLeft="@id/circle_right"
+                android:layout_marginTop="1dp"
+                android:background="@color/green"
+                android:visibility="invisible"
+                ></View>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_circle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ></FrameLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

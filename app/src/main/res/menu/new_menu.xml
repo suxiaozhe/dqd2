@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_notice"
+            android:icon="@drawable/menu_notice"
+            android:title="我的通知" />
+        <item
+            android:id="@+id/menu_collection"
+            android:icon="@drawable/menu_cllection"
+            android:title="收藏/历史"
+            />
+        <item
+            android:id="@+id/menu_news"
+            android:icon="@drawable/menu_news"
+            android:title="系统消息"/>
+        <item
+            android:id="@+id/menu_shop"
+            android:icon="@drawable/menu_shop"
+            android:title="懂球帝商城"/>
+    </group>
+</menu>
