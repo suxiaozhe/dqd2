@@ -1,6 +1,7 @@
 package com.example.administrator.dqd.fragment;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.view.LayoutInflater;
@@ -16,6 +17,22 @@ public class DataFragment extends Fragment {
     //定义侧滑菜单布局，即main_menu
     private View menu;
     private DrawerLayout drawerLayout;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+    }
+
+    public void onSaveInstanceState(Bundle outState){
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+    }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

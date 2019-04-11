@@ -8,7 +8,7 @@
             android:title="我的通知" />
         <item
             android:id="@+id/menu_collection"
-            android:icon="@drawable/menu_cllection"
+            android:icon="@drawable/menu_collection"
             android:title="收藏/历史"
             />
         <item

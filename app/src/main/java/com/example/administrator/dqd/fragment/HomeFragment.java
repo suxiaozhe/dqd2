@@ -1,7 +1,9 @@
 package com.example.administrator.dqd.fragment;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -31,9 +33,13 @@ public class HomeFragment extends Fragment {
     private View menu;
     private CircleFragment circleFragment;
     private SelectedFragment selectedFragment;
+    private Fragment fragment;
+    private android.support.v4.app.FragmentManager fragmentManager;
 
 
+    public void onCreate(){
 
+    }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -61,7 +67,6 @@ public class HomeFragment extends Fragment {
         viewList.add(view1);
         viewList.add(view2);
         viewList.add(view3);
-
 
         PagerAdapter pagerAdapter = new PagerAdapter() {
 
@@ -101,6 +106,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
             }
+
             @Override
             public void onPageSelected(int position) {
                 if(position==0)
@@ -113,22 +119,16 @@ public class HomeFragment extends Fragment {
                     view12.setVisibility(view12.VISIBLE);
                     view13.setVisibility(view13.INVISIBLE);
                 }else if (position==2){
+
                     //获取进圈精选下划线视图
                     xian1 = (viewList.get(2)).findViewById(R.id.xian1);
                     xian2 = (viewList.get(2)).findViewById(R.id.xian2);
 
-                    //默认选择进圈视图
-                    if(xian1.getVisibility()==xian1.VISIBLE){
-                        Fragment fragment = circleFragment;
-                        getFragmentManager().beginTransaction().replace(R.id.fl_circle,fragment).commit();
-                    }//在此处设置默认，要考虑到viewpager切换回来的情况
 
-                    //获取进圈和精选的视图
+
+                    //实例化进圈和精选的视图
                     circle_left = (viewList.get(2)).findViewById(R.id.circle_left);
                     circle_right = (viewList.get(2)).findViewById(R.id.circle_right);
-
-
-
 
                     view11.setVisibility(view11.INVISIBLE);
                     view12.setVisibility(view12.INVISIBLE);
@@ -169,9 +169,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        //创建CircleFragment和SelecredFragment对象
-        circleFragment = new CircleFragment();
-        selectedFragment = new SelectedFragment();
 
 
 
@@ -183,7 +180,7 @@ public class HomeFragment extends Fragment {
 
     public void initMenu() {
         //屏幕保持高亮，不被侧滑菜单遮盖
-        drawerLayout.setScrimColor(0x00ffffff);
+        //drawerLayout.setScrimColor(0x00ffffff);
         drawerLayout.addDrawerListener(new DrawerLayout.DrawerListener() {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
@@ -213,12 +210,24 @@ public class HomeFragment extends Fragment {
     ///监听方法
     private void initListen() {
 
+        //默认选择进圈视图
+        fragmentManager = getChildFragmentManager();
+        FragmentTransaction ft = fragmentManager.beginTransaction();
+
+        if(xian1.getVisibility()==xian1.VISIBLE&&circleFragment==null){
+            circleFragment = new CircleFragment();
+            ft.add(R.id.fl_circle,circleFragment).commit();
+        }//在此处设置默认，要考虑到viewpager切换回来的情况
+
+
         circle_left.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                //切换Fragment页面
-                Fragment fragment = circleFragment;
-                getFragmentManager().beginTransaction().replace(R.id.fl_circle,fragment).commit();
+
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+                hideFragments(ft);
+                ft.show(circleFragment).commit();
                 //设置下划线显示隐藏
                 xian1.setVisibility(xian1.VISIBLE);
                 xian2.setVisibility(xian2.INVISIBLE);
@@ -228,15 +237,32 @@ public class HomeFragment extends Fragment {
         circle_right.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              Fragment fragment = selectedFragment;
-              getFragmentManager().beginTransaction().replace(R.id.fl_circle,fragment).commit();
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+                hideFragments(ft);
+
+                if(selectedFragment!=null){
+                    ft.show(selectedFragment).commit();
+                }else{
+                    selectedFragment = new SelectedFragment();
+                    ft.add(R.id.fl_circle,selectedFragment).commit();
+                }
                 //设置下划线显示隐藏
                 xian1.setVisibility(xian1.INVISIBLE);
                 xian2.setVisibility(xian2.VISIBLE);
-
             }
         });
 
+
+
+    }
+
+    public void hideFragments(FragmentTransaction ft){
+        if(circleFragment!=null){
+            ft.hide(circleFragment);
+        }
+        if(selectedFragment!=null){
+            ft.hide(selectedFragment);
+        }
     }
 
 }

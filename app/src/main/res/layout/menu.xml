@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/menu4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/menu4_feedback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/menu4_feedback_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/menu_feedback"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_toRightOf="@id/menu4_feedback_image"
+                android:id="@+id/menu4_feedback_text"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="反馈"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu4_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/menu4_search_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/menu_search"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_toRightOf="@id/menu4_search_image"
+                android:id="@+id/menu4_search_text"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="搜索"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu4_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/menu4_setting_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/menu_setting"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_toRightOf="@id/menu4_setting_image"
+                android:id="@+id/menu4_setting_text"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="设置"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

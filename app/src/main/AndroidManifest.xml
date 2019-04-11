@@ -24,6 +24,18 @@
         </activity>
         <activity android:name=".LoginActivity">
         </activity>
+        <activity android:name=".UserInfoActivity">
+        </activity>
+        <activity android:name=".FollowActivity"></activity>
+        <activity android:name=".FansActivity"></activity>
+        <activity android:name=".PublishActivity"></activity>
+        <activity android:name=".NoticeActivity"></activity>
+        <activity android:name=".ShopActivity"></activity>
+        <activity android:name=".NewsActivity"></activity>
+        <activity android:name=".CollectionActivity"></activity>
+        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".FeedbackActivity"></activity>
     </application>
 
 </manifest>
