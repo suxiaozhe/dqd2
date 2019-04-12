@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/follow_linearLayout"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -35,5 +36,36 @@
 
 
     </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="190dp"></View>
+        <ImageView
+            android:src="@drawable/follow_empty_bg"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="没有朋友就像守门一样恐怖"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="赶紧发展一下粉丝来改变命运吧"
+            android:textSize="13dp"
+            android:textColor="@color/grey"
+            />
+    </LinearLayout>
 
 </LinearLayout>
