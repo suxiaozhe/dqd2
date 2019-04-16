@@ -27,7 +27,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:text="进圈" />
+                android:text="进圈"
+                android:textColor="@color/title_indicator_text_color"  />
 
             <TextView
                 android:id="@+id/circle_right"
@@ -38,7 +39,8 @@
                 android:layout_marginLeft="60dp"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:text="精选" />
+                android:text="精选"
+                android:textColor="@color/title_indicator_text_color"/>
 
             <View
                 android:id="@+id/xian1"

@@ -1,1 +1,3 @@
 include ':app', ':rabbit', ':demo'
+include ':ViewPagerIndicator_library'
+include ':ViewPagerIndicator_sample'

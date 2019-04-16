@@ -1,7 +1,10 @@
 package com.example.administrator.dqd;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.view.ViewCompat;
 import android.view.MotionEvent;
 import android.view.View;
@@ -13,15 +16,14 @@ import android.widget.LinearLayout;
 
 public class FollowActivity extends Activity {
 
-    private ImageView title_back;
-    private LinearLayout linearLayout;
     private float  mPosX, mPosY,mCurPosX,mCurPosY;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_follow);
 
-        title_back = findViewById(R.id.title_back);
+        ImageView title_back = findViewById(R.id.title_back);
         title_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +39,7 @@ public class FollowActivity extends Activity {
         //设置状态栏颜色
         //window.setStatusBarColor(R.color.green);
 
-        ViewGroup mContentView = FollowActivity.this.findViewById(Window.ID_ANDROID_CONTENT);
+        ViewGroup mContentView = FollowActivity.this.<ViewGroup>findViewById(Window.ID_ANDROID_CONTENT);
 
         View mChildView = mContentView.getChildAt(0);
         if(mChildView != null){
@@ -50,9 +52,10 @@ public class FollowActivity extends Activity {
 
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private void setGestureListener(){
 
-        linearLayout = findViewById(R.id.follow_linearLayout);
+        LinearLayout linearLayout = findViewById(R.id.follow_linearLayout);
 
         linearLayout.setOnTouchListener(new View.OnTouchListener() {
 

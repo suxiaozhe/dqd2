@@ -2,10 +2,10 @@ package com.example.administrator.dqd;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -57,8 +57,14 @@ public class MainActivity extends FragmentActivity {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //设置没有标题
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MyOpenHelper myOpenHelper = new MyOpenHelper(MainActivity.this);
+        SQLiteDatabase sqLiteDatabase = myOpenHelper.getWritableDatabase();
 
         fragmentManager = getSupportFragmentManager();
 
@@ -283,35 +289,35 @@ public class MainActivity extends FragmentActivity {
         rb_main_lottery=findViewById(R.id.rb_main_lottery);
         rb_main_data=findViewById(R.id.rb_main_data);
         //定义底部标签图片大小和位置
-        Drawable drawable_tab1=getResources().getDrawable(R.drawable.main_botton_image_tab1_selector);
+        Drawable drawable_tab1=getResources().getDrawable(R.drawable.main_button_image_tab1_selector);
         //当这个图片被绘制时，给它绑定一个矩形
         drawable_tab1.setBounds(0,0,80,80);
         //设置图片在文字的哪个方向
         rb_main_home.setCompoundDrawables(null,drawable_tab1,null,null);
 
         //定义底部标签图片大小和位置
-        Drawable drawable_tab2=getResources().getDrawable(R.drawable.main_botton_image_tab2_selector);
+        Drawable drawable_tab2=getResources().getDrawable(R.drawable.main_button_image_tab2_selector);
         //当这个图片被绘制时，给它绑定一个矩形
         drawable_tab2.setBounds(0,0,80,80);
         //设置图片在文字的哪个方向
         rb_main_match.setCompoundDrawables(null,drawable_tab2,null,null);
 
         //定义底部标签图片大小和位置
-        Drawable drawable_tab3=getResources().getDrawable(R.drawable.main_botton_image_tab3_selector);
+        Drawable drawable_tab3=getResources().getDrawable(R.drawable.main_button_image_tab3_selector);
         //当这个图片被绘制时，给它绑定一个矩形
         drawable_tab3.setBounds(0,0,120,120);
         //设置图片在文字的哪个方向
         rb_main_favorite.setCompoundDrawables(null,drawable_tab3,null,null);
 
         //定义底部标签图片大小和位置
-        Drawable drawable_tab4=getResources().getDrawable(R.drawable.main_botton_image_tab4_selector);
+        Drawable drawable_tab4=getResources().getDrawable(R.drawable.main_button_image_tab4_selector);
         //当这个图片被绘制时，给它绑定一个矩形
         drawable_tab4.setBounds(0,0,80,80);
         //设置图片在文字的哪个方向
         rb_main_lottery.setCompoundDrawables(null,drawable_tab4,null,null);
 
         //定义底部标签图片大小和位置
-        Drawable drawable_tab5=getResources().getDrawable(R.drawable.main_botton_image_tab5_selector);
+        Drawable drawable_tab5=getResources().getDrawable(R.drawable.main_button_image_tab5_selector);
         //当这个图片被绘制时，给它绑定一个矩形
         drawable_tab5.setBounds(0,0,80,80);
         //设置图片在文字的哪个方向
@@ -325,7 +331,7 @@ public class MainActivity extends FragmentActivity {
     }
 
     private FragmentManager manager = getSupportFragmentManager();
-    private long firstTime;// 记录点击返回时第一次的时间毫秒值
+    private long firstTime;//                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          记录点击返回时第一次的时间毫秒值
 
     /*
      * 重写该方法，判断用户按下返回按键的时候，执行退出应用方法

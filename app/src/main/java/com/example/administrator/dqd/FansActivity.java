@@ -1,5 +1,6 @@
 package com.example.administrator.dqd;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
@@ -13,15 +14,13 @@ import android.widget.LinearLayout;
 
 public class FansActivity extends Activity {
 
-    private ImageView title_back;
-    private LinearLayout linearLayout;
     private float  mPosX, mPosY,mCurPosX,mCurPosY;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_fans);
 
-        title_back = findViewById(R.id.title_back);
+        ImageView title_back = findViewById(R.id.title_back);
         title_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,9 +48,10 @@ public class FansActivity extends Activity {
         setGestureListener();
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private void setGestureListener(){
 
-        linearLayout = findViewById(R.id.fans_linearLayout);
+        LinearLayout linearLayout = findViewById(R.id.fans_linearLayout);
 
         linearLayout.setOnTouchListener(new View.OnTouchListener() {
 
@@ -77,9 +77,6 @@ public class FansActivity extends Activity {
                             if((Math.abs(mCurPosY - mPosY) < 200)){
                                 finish();
                             }
-                        } else if (mCurPosX - mPosX < 0
-                                && (Math.abs(mCurPosX - mPosX) > 25)) {
-                            //向左滑动
                         }
 
                         break;

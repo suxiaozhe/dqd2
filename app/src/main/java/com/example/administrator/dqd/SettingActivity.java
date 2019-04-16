@@ -8,18 +8,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
 
 public class SettingActivity extends Activity {
 
     private ImageView title_back;
     private LinearLayout linearLayout;
     private float  mPosX, mPosY,mCurPosX,mCurPosY;
+    private RadioButton rb_textsize_big,rb_textsize_middle,rb_textsize_small;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_setting);
+
+        rb_textsize_big = findViewById(R.id.rb_textsize_big);
+        rb_textsize_big.setChecked(true);
 
         title_back = findViewById(R.id.title_back);
         title_back.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +56,9 @@ public class SettingActivity extends Activity {
         //此方法可以监听滑动，实现右滑退出，但是无法检测速度来判定是否启动退出
         setGestureListener();
 
+
     }
+
     private void setGestureListener(){
 
         linearLayout = findViewById(R.id.setting_linearLayout);

@@ -1,35 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/tabPageIndicator"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="25dp"
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"><TextView
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="1000dp"
-            android:text="足球页面"
-            android:textSize="25dp"
-            android:textColor="@color/green"/>
-            <TextView
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="1000dp"
-                android:text="哈哈"
-                android:textSize="30dp"
-                android:textColor="@color/green" />
-        </LinearLayout>
+        android:layout_height="wrap_content"/>
 
 
+    <com.example.administrator.dqd.pager.NoScollViewPager
+        android:id="@+id/soccer_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
 
-    </ScrollView>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

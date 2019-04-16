@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import com.example.administrator.dqd.R;
 
 public class SelectedFragment extends Fragment {
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.circle_selected_fragment, container, false);

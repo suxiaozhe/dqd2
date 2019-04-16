@@ -34,8 +34,82 @@
             android:textSize="18dp"
             android:layout_centerHorizontal="true" />
 
+        <TextView
+            android:id="@+id/feedback_internet"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="网络诊断"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            />
+
 
     </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/middle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"></View>
+        <TextView
+            android:id="@+id/feedback_left"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/middle"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="意见反馈" />
+
+        <TextView
+            android:id="@+id/feedback_right"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/middle"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="反馈记录" />
+
+        <View
+            android:id="@+id/xian1"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/feedback_left"
+            android:layout_alignLeft="@id/feedback_left"
+            android:layout_marginTop="1dp"
+            android:background="@color/green"
+            ></View>
+        <View
+            android:id="@+id/xian2"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/feedback_right"
+            android:layout_alignLeft="@id/feedback_right"
+            android:layout_marginTop="1dp"
+            android:background="@color/green"
+            android:visibility="invisible"
+            ></View>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+
 
 
 </LinearLayout>

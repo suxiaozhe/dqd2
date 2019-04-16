@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rotation"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+
+
+    <RelativeLayout
+        android:background="#44000000"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="人和VS恒大：黄博文、刘弈鸣首发，布朗宁替补"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:id="@+id/ll_point_group"
+            android:layout_below="@id/tv_title"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
