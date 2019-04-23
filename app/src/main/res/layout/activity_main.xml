@@ -328,6 +328,7 @@
                             android:layout_marginLeft="20dp"
                             android:text="我的通知"
                             android:textSize="18dp"
+                            android:textColor="@color/black"
                             />
 
 
@@ -364,6 +365,7 @@
                             android:layout_marginLeft="20dp"
                             android:text="收藏/历史"
                             android:textSize="18dp"
+                            android:textColor="@color/black"
                             />
 
 
@@ -399,6 +401,7 @@
                             android:layout_marginLeft="20dp"
                             android:text="系统消息"
                             android:textSize="18dp"
+                            android:textColor="@color/black"
                             />
 
 
@@ -434,6 +437,7 @@
                             android:layout_marginLeft="20dp"
                             android:text="懂球帝商城"
                             android:textSize="18dp"
+                            android:textColor="@color/black"
                             />
 
 
@@ -482,7 +486,8 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="红单会员"/>
+                                android:text="红单会员"
+                                android:textColor="@color/black"/>
 
                         </LinearLayout>
 
@@ -510,7 +515,8 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="大数据锦囊"/>
+                                android:text="大数据锦囊"
+                                android:textColor="@color/black"/>
 
                         </LinearLayout>
 
@@ -538,7 +544,8 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="懂彩帝"/>
+                                android:text="懂彩帝"
+                                android:textColor="@color/black"/>
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -573,7 +580,8 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="中超排名预测"/>
+                                android:text="中超排名预测"
+                                android:textColor="@color/black"/>
 
                         </LinearLayout>
 
@@ -583,7 +591,8 @@
                             android:id="@+id/menu3_game"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            >
 
                             <ImageView
                                 android:layout_marginTop="20dp"
@@ -601,7 +610,9 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="游戏中心"/>
+                                android:text="游戏中心"
+                                android:textColor="@color/black"
+                                />
 
                         </LinearLayout>
 
@@ -629,7 +640,8 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="我是教练"/>
+                                android:text="我是教练"
+                                android:textColor="@color/black"/>
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -664,7 +676,8 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="我是教练OL"/>
+                                android:text="我是教练OL"
+                                android:textColor="@color/black"/>
 
                         </LinearLayout>
 
@@ -692,7 +705,8 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="广告自助投放"/>
+                                android:text="广告自助投放"
+                                android:textColor="@color/black"/>
 
                         </LinearLayout>
 
@@ -720,7 +734,8 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="免广告会员"/>
+                                android:text="免广告会员"
+                                android:textColor="@color/black"/>
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -756,6 +771,7 @@
                                 android:layout_gravity="center"
                                 android:gravity="center"
                                 android:text="免流量特权"
+                                android:textColor="@color/black"
                                 />
 
                         </LinearLayout>
@@ -784,7 +800,8 @@
                                 android:textSize="15dp"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="扫一扫"/>
+                                android:text="扫一扫"
+                                android:textColor="@color/black"/>
 
                         </LinearLayout>
 
@@ -826,7 +843,8 @@
                     android:layout_height="30dp"
                     android:gravity="center"
                     android:layout_centerVertical="true"
-                    android:text="反馈"/>
+                    android:text="反馈"
+                    android:textColor="@color/black"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -853,7 +871,8 @@
                     android:layout_height="30dp"
                     android:gravity="center"
                     android:layout_centerVertical="true"
-                    android:text="搜索"/>
+                    android:text="搜索"
+                    android:textColor="@color/black"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -880,7 +899,8 @@
                     android:layout_height="30dp"
                     android:gravity="center"
                     android:layout_centerVertical="true"
-                    android:text="设置"/>
+                    android:text="设置"
+                    android:textColor="@color/black"/>
             </RelativeLayout>
 
         </LinearLayout>

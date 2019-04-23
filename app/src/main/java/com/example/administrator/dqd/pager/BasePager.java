@@ -2,7 +2,9 @@ package com.example.administrator.dqd.pager;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
@@ -10,6 +12,7 @@ import android.support.v4.view.ViewPager;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -17,6 +20,9 @@ import android.widget.ListView;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.example.administrator.dqd.ContentActivity;
+import com.example.administrator.dqd.HomeSoccerActivity;
+import com.example.administrator.dqd.HomeSoccerActivity2;
 import com.example.administrator.dqd.MainActivity;
 import com.example.administrator.dqd.R;
 
@@ -37,8 +43,8 @@ public class BasePager {
     boolean isRunning = false;
     public int[] pictureId = {R.drawable.viewpager0, R.drawable.viewpager1, R.drawable.viewpager2,
             R.drawable.viewpager3, R.drawable.viewpager4, R.drawable.viewpager5};
-    public String[] titie = {"人和VS恒大：黄博文、刘弈鸣首发，布朗宁替补","半场战报：山东0-1一方，卡拉斯科失良机，穆谢奎头球破门","官方：黄博文当选长沙市足协副主席",
-            "头号玩家？国外小哥玩FM连吼带叫，还怒踢茶杯“被罚上看台”", "恒大1-2人和联赛四连胜终结，保利尼奥染红，陈杰补时绝杀","克林斯曼回应执教国足传闻：时间会给出答案"};
+    String[] title = {"恒大vs山东：恒大单外援塔利斯卡首发，费莱尼先发登场","天海vs上港：吴伟、林创益分别首发，孙可替补待命","ESPN记者：今夏巴萨中国行可能与恒大交手",
+            "本周赛事看点：曼城复仇热刺？国米倒戈罗马？","伊涅斯塔：对阵巴萨是一次前所未有的体验，一定会很刺激","纳尔多：努力为西班牙人争取最好的联赛排名" };
     public String[] comment = {"1234评论","1342评论","2341评论","2431评论","2143评论","4231评论"};
 
 //    private TextView textView;
@@ -52,6 +58,7 @@ public class BasePager {
         rootView = initView();
         ss = s;
 
+        //轮播线程
         new Thread(new Runnable() {
             @Override
             public void run(){
@@ -124,6 +131,17 @@ public class BasePager {
         adapter = new ListViewAdapter();
         listView.addHeaderView(topNewsView);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Bundle bundle = new Bundle();
+                bundle.putInt("position",position);
+                Intent intent = new Intent();
+                intent.putExtras(bundle);
+                intent.setClass(context,HomeSoccerActivity.class);
+                context.startActivity(intent);
+            }
+        });
 
         return view;
     }
@@ -177,7 +195,7 @@ public class BasePager {
                 textView_comment = convertView.findViewById(R.id.item_comment);
             }
             int i = position % 6;
-            text_View.setText(position+":"+titie[i]);
+            text_View.setText(position+":"+title[i]);
             image_View.setBackgroundResource(pictureId[i]);
             textView_comment.setText(comment[i]);
             return convertView;
@@ -211,19 +229,19 @@ public class BasePager {
                     tv_title.setText(sss);
                     break;
                 case 1:
-                    tv_title.setText(titie[i]);
+                    tv_title.setText(title[i]);
                     break;
                 case 2:
-                    tv_title.setText(titie[i]);
+                    tv_title.setText(title[i]);
                     break;
                 case 3:
-                    tv_title.setText(titie[i]);
+                    tv_title.setText(title[i]);
                     break;
                 case 4:
-                    tv_title.setText(titie[i]);
+                    tv_title.setText(title[i]);
                     break;
                 case 5:
-                    tv_title.setText(titie[i]);
+                    tv_title.setText(title[i]);
                     break;
             }
             //2.对应页面的点高亮，之前的点变暗
@@ -248,7 +266,7 @@ public class BasePager {
 
         @NonNull
         @Override
-        public Object instantiateItem(@NonNull ViewGroup container, int position) {
+        public Object instantiateItem(@NonNull ViewGroup container, final int position) {
             ImageView imageView = new ImageView(context);
             switch(position){
                 case 0:
@@ -270,6 +288,20 @@ public class BasePager {
                     imageView.setBackgroundResource(R.drawable.viewpager5);
                     break;
             }
+
+            //为轮播图设置点击事件
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("position",position);
+                    Intent intent = new Intent();
+                    intent.putExtras(bundle);
+                    intent.setClass(context,HomeSoccerActivity2.class);
+                    context.startActivity(intent);
+                }
+            });
+
             container.addView(imageView);
             return imageView;
         }

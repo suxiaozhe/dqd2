@@ -568,6 +568,7 @@ public final class R {
      */
     public static final int checkedTextViewStyle=0x7f020046;
     /**
+     * Screen edge padding.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -896,19 +897,23 @@ public final class R {
      */
     public static final int expandActivityOverflowButtonDrawable=0x7f020073;
     /**
+     * Length of the delay to fade the indicator.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int fadeDelay=0x7f020074;
     /**
+     * Length of the indicator fade to transparent.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int fadeLength=0x7f020075;
     /**
+     * Whether or not the selected indicator fades.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int fades=0x7f020076;
     /**
+     * Color of the filled circle that represents the current page.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -994,12 +999,14 @@ public final class R {
      */
     public static final int fontWeight=0x7f020082;
     /**
+     * Color of the footer line and indicator.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int footerColor=0x7f020083;
     /**
+     * Height of the indicator above the footer line.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1008,6 +1015,7 @@ public final class R {
      */
     public static final int footerIndicatorHeight=0x7f020084;
     /**
+     * Style of the indicator. Default is triangle.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1021,6 +1029,7 @@ public final class R {
      */
     public static final int footerIndicatorStyle=0x7f020085;
     /**
+     * Left and right padding of the underline indicator.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1029,6 +1038,7 @@ public final class R {
      */
     public static final int footerIndicatorUnderlinePadding=0x7f020086;
     /**
+     * Height of the footer line.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1037,6 +1047,7 @@ public final class R {
      */
     public static final int footerLineHeight=0x7f020087;
     /**
+     * Padding between the bottom of the title and the footer.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1053,6 +1064,7 @@ public final class R {
      */
     public static final int gapBetweenBars=0x7f020089;
     /**
+     * Width of the gap between each indicator line.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1250,6 +1262,7 @@ public final class R {
      */
     public static final int layout_keyline=0x7f0200a0;
     /**
+     * Position of the line.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1262,6 +1275,7 @@ public final class R {
      */
     public static final int linePosition=0x7f0200a1;
     /**
+     * Width of each indicator line.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1462,6 +1476,7 @@ public final class R {
      */
     public static final int paddingTopNoTitle=0x7f0200bb;
     /**
+     * Color of the filled circles that represents pages.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -1550,6 +1565,7 @@ public final class R {
      */
     public static final int radioButtonStyle=0x7f0200c8;
     /**
+     * Radius of the circles. This is also the spacing between circles.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1621,6 +1637,7 @@ public final class R {
      */
     public static final int selectableItemBackgroundBorderless=0x7f0200d2;
     /**
+     * Whether or not the selected item is displayed as bold.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -1678,6 +1695,7 @@ public final class R {
      */
     public static final int singleChoiceItemLayout=0x7f0200d9;
     /**
+     * Whether or not the selected indicator snaps to the circles.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -1729,6 +1747,7 @@ public final class R {
      */
     public static final int statusBarBackground=0x7f0200e1;
     /**
+     * Color of the open circles.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -2053,6 +2072,7 @@ public final class R {
      */
     public static final int titleMargins=0x7f02010a;
     /**
+     * Padding between titles when bumping into each other.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2117,6 +2137,7 @@ public final class R {
      */
     public static final int tooltipText=0x7f020113;
     /**
+     * Padding between titles and the top of the View.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2176,6 +2197,7 @@ public final class R {
      */
     public static final int voiceIcon=0x7f02011b;
     /**
+     * Style of the circle indicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2183,6 +2205,7 @@ public final class R {
      */
     public static final int vpiCirclePageIndicatorStyle=0x7f02011c;
     /**
+     * Style of the icon indicator's views.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2190,6 +2213,7 @@ public final class R {
      */
     public static final int vpiIconPageIndicatorStyle=0x7f02011d;
     /**
+     * Style of the line indicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2197,6 +2221,7 @@ public final class R {
      */
     public static final int vpiLinePageIndicatorStyle=0x7f02011e;
     /**
+     * Style of the tab indicator's tabs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2204,6 +2229,7 @@ public final class R {
      */
     public static final int vpiTabPageIndicatorStyle=0x7f02011f;
     /**
+     * Style of the title indicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2211,6 +2237,7 @@ public final class R {
      */
     public static final int vpiTitlePageIndicatorStyle=0x7f020120;
     /**
+     * Style of the underline indicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -6300,11 +6327,11 @@ public final class R {
      * <tr><td><code>{@link #CirclePageIndicator_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #CirclePageIndicator_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #CirclePageIndicator_centered com.viewpagerindicator.sample:centered}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CirclePageIndicator_fillColor com.viewpagerindicator.sample:fillColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CirclePageIndicator_pageColor com.viewpagerindicator.sample:pageColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CirclePageIndicator_radius com.viewpagerindicator.sample:radius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CirclePageIndicator_snap com.viewpagerindicator.sample:snap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CirclePageIndicator_strokeColor com.viewpagerindicator.sample:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CirclePageIndicator_fillColor com.viewpagerindicator.sample:fillColor}</code></td><td>Color of the filled circle that represents the current page.</td></tr>
+     * <tr><td><code>{@link #CirclePageIndicator_pageColor com.viewpagerindicator.sample:pageColor}</code></td><td>Color of the filled circles that represents pages.</td></tr>
+     * <tr><td><code>{@link #CirclePageIndicator_radius com.viewpagerindicator.sample:radius}</code></td><td>Radius of the circles.</td></tr>
+     * <tr><td><code>{@link #CirclePageIndicator_snap com.viewpagerindicator.sample:snap}</code></td><td>Whether or not the selected indicator snaps to the circles.</td></tr>
+     * <tr><td><code>{@link #CirclePageIndicator_strokeColor com.viewpagerindicator.sample:strokeColor}</code></td><td>Color of the open circles.</td></tr>
      * <tr><td><code>{@link #CirclePageIndicator_strokeWidth com.viewpagerindicator.sample:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #CirclePageIndicator_android_orientation
@@ -6323,8 +6350,9 @@ public final class R {
       0x7f0200e3
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#orientation}
-     * attribute's value can be found in the {@link #CirclePageIndicator} array.
+     * <p>
+     * @attr description
+     * Orientation of the indicator.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -6340,8 +6368,9 @@ public final class R {
      */
     public static final int CirclePageIndicator_android_orientation=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#background}
-     * attribute's value can be found in the {@link #CirclePageIndicator} array.
+     * <p>
+     * @attr description
+     * View background
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -6355,8 +6384,9 @@ public final class R {
      */
     public static final int CirclePageIndicator_android_background=1;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#centered}
-     * attribute's value can be found in the {@link #CirclePageIndicator} array.
+     * <p>
+     * @attr description
+     * Whether or not the indicators should be centered.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -6365,8 +6395,9 @@ public final class R {
      */
     public static final int CirclePageIndicator_centered=2;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#fillColor}
-     * attribute's value can be found in the {@link #CirclePageIndicator} array.
+     * <p>
+     * @attr description
+     * Color of the filled circle that represents the current page.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -6376,8 +6407,9 @@ public final class R {
      */
     public static final int CirclePageIndicator_fillColor=3;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#pageColor}
-     * attribute's value can be found in the {@link #CirclePageIndicator} array.
+     * <p>
+     * @attr description
+     * Color of the filled circles that represents pages.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -6387,8 +6419,9 @@ public final class R {
      */
     public static final int CirclePageIndicator_pageColor=4;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#radius}
-     * attribute's value can be found in the {@link #CirclePageIndicator} array.
+     * <p>
+     * @attr description
+     * Radius of the circles. This is also the spacing between circles.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -6400,8 +6433,9 @@ public final class R {
      */
     public static final int CirclePageIndicator_radius=5;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#snap}
-     * attribute's value can be found in the {@link #CirclePageIndicator} array.
+     * <p>
+     * @attr description
+     * Whether or not the selected indicator snaps to the circles.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -6410,8 +6444,9 @@ public final class R {
      */
     public static final int CirclePageIndicator_snap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#strokeColor}
-     * attribute's value can be found in the {@link #CirclePageIndicator} array.
+     * <p>
+     * @attr description
+     * Color of the open circles.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -6421,8 +6456,9 @@ public final class R {
      */
     public static final int CirclePageIndicator_strokeColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#strokeWidth}
-     * attribute's value can be found in the {@link #CirclePageIndicator} array.
+     * <p>
+     * @attr description
+     * Width of the stroke used to draw the circles.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7132,8 +7168,8 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #LinePageIndicator_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinePageIndicator_centered com.viewpagerindicator.sample:centered}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinePageIndicator_gapWidth com.viewpagerindicator.sample:gapWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinePageIndicator_lineWidth com.viewpagerindicator.sample:lineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinePageIndicator_gapWidth com.viewpagerindicator.sample:gapWidth}</code></td><td>Width of the gap between each indicator line.</td></tr>
+     * <tr><td><code>{@link #LinePageIndicator_lineWidth com.viewpagerindicator.sample:lineWidth}</code></td><td>Width of each indicator line.</td></tr>
      * <tr><td><code>{@link #LinePageIndicator_selectedColor com.viewpagerindicator.sample:selectedColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinePageIndicator_strokeWidth com.viewpagerindicator.sample:strokeWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinePageIndicator_unselectedColor com.viewpagerindicator.sample:unselectedColor}</code></td><td></td></tr>
@@ -7151,8 +7187,9 @@ public final class R {
       0x7f0200d4, 0x7f0200e3, 0x7f020119
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#background}
-     * attribute's value can be found in the {@link #LinePageIndicator} array.
+     * <p>
+     * @attr description
+     * View background
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7166,8 +7203,9 @@ public final class R {
      */
     public static final int LinePageIndicator_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#centered}
-     * attribute's value can be found in the {@link #LinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Whether or not the indicators should be centered.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -7176,8 +7214,9 @@ public final class R {
      */
     public static final int LinePageIndicator_centered=1;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#gapWidth}
-     * attribute's value can be found in the {@link #LinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Width of the gap between each indicator line.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7189,8 +7228,9 @@ public final class R {
      */
     public static final int LinePageIndicator_gapWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#lineWidth}
-     * attribute's value can be found in the {@link #LinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Width of each indicator line.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7202,8 +7242,9 @@ public final class R {
      */
     public static final int LinePageIndicator_lineWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#selectedColor}
-     * attribute's value can be found in the {@link #LinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Color of the selected line that represents the current page.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -7213,8 +7254,9 @@ public final class R {
      */
     public static final int LinePageIndicator_selectedColor=4;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#strokeWidth}
-     * attribute's value can be found in the {@link #LinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Width of each indicator line's stroke.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7226,8 +7268,9 @@ public final class R {
      */
     public static final int LinePageIndicator_strokeWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#unselectedColor}
-     * attribute's value can be found in the {@link #LinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Color of the unselected lines that represent the pages.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9105,18 +9148,18 @@ public final class R {
      * <tr><td><code>{@link #TitlePageIndicator_android_textSize android:textSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #TitlePageIndicator_android_textColor android:textColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #TitlePageIndicator_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_clipPadding com.viewpagerindicator.sample:clipPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_footerColor com.viewpagerindicator.sample:footerColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_footerIndicatorHeight com.viewpagerindicator.sample:footerIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_footerIndicatorStyle com.viewpagerindicator.sample:footerIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_footerIndicatorUnderlinePadding com.viewpagerindicator.sample:footerIndicatorUnderlinePadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_footerLineHeight com.viewpagerindicator.sample:footerLineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_footerPadding com.viewpagerindicator.sample:footerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_linePosition com.viewpagerindicator.sample:linePosition}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_selectedBold com.viewpagerindicator.sample:selectedBold}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_clipPadding com.viewpagerindicator.sample:clipPadding}</code></td><td>Screen edge padding.</td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_footerColor com.viewpagerindicator.sample:footerColor}</code></td><td>Color of the footer line and indicator.</td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_footerIndicatorHeight com.viewpagerindicator.sample:footerIndicatorHeight}</code></td><td>Height of the indicator above the footer line.</td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_footerIndicatorStyle com.viewpagerindicator.sample:footerIndicatorStyle}</code></td><td>Style of the indicator.</td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_footerIndicatorUnderlinePadding com.viewpagerindicator.sample:footerIndicatorUnderlinePadding}</code></td><td>Left and right padding of the underline indicator.</td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_footerLineHeight com.viewpagerindicator.sample:footerLineHeight}</code></td><td>Height of the footer line.</td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_footerPadding com.viewpagerindicator.sample:footerPadding}</code></td><td>Padding between the bottom of the title and the footer.</td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_linePosition com.viewpagerindicator.sample:linePosition}</code></td><td>Position of the line.</td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_selectedBold com.viewpagerindicator.sample:selectedBold}</code></td><td>Whether or not the selected item is displayed as bold.</td></tr>
      * <tr><td><code>{@link #TitlePageIndicator_selectedColor com.viewpagerindicator.sample:selectedColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_titlePadding com.viewpagerindicator.sample:titlePadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TitlePageIndicator_topPadding com.viewpagerindicator.sample:topPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_titlePadding com.viewpagerindicator.sample:titlePadding}</code></td><td>Padding between titles when bumping into each other.</td></tr>
+     * <tr><td><code>{@link #TitlePageIndicator_topPadding com.viewpagerindicator.sample:topPadding}</code></td><td>Padding between titles and the top of the View.</td></tr>
      * </table>
      * @see #TitlePageIndicator_android_textSize
      * @see #TitlePageIndicator_android_textColor
@@ -9141,8 +9184,9 @@ public final class R {
       0x7f0200d4, 0x7f02010b, 0x7f020114
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textSize}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Size of title text.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9154,8 +9198,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_android_textSize=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textColor}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Color of regular titles.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9169,8 +9214,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_android_textColor=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#background}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * View background
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9184,8 +9230,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_android_background=2;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#clipPadding}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Screen edge padding.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9197,8 +9244,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_clipPadding=3;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#footerColor}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Color of the footer line and indicator.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9208,8 +9256,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_footerColor=4;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#footerIndicatorHeight}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Height of the indicator above the footer line.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9221,8 +9270,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_footerIndicatorHeight=5;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#footerIndicatorStyle}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Style of the indicator. Default is triangle.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -9239,8 +9289,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_footerIndicatorStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#footerIndicatorUnderlinePadding}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Left and right padding of the underline indicator.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9252,8 +9303,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_footerIndicatorUnderlinePadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#footerLineHeight}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Height of the footer line.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9265,8 +9317,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_footerLineHeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#footerPadding}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Padding between the bottom of the title and the footer.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9278,8 +9331,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_footerPadding=9;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#linePosition}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Position of the line.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -9295,8 +9349,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_linePosition=10;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#selectedBold}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Whether or not the selected item is displayed as bold.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -9305,8 +9360,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_selectedBold=11;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#selectedColor}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Color of the selected title.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9316,8 +9372,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_selectedColor=12;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#titlePadding}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Padding between titles when bumping into each other.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9329,8 +9386,9 @@ public final class R {
      */
     public static final int TitlePageIndicator_titlePadding=13;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#topPadding}
-     * attribute's value can be found in the {@link #TitlePageIndicator} array.
+     * <p>
+     * @attr description
+     * Padding between titles and the top of the View.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9798,9 +9856,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #UnderlinePageIndicator_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #UnderlinePageIndicator_fadeDelay com.viewpagerindicator.sample:fadeDelay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #UnderlinePageIndicator_fadeLength com.viewpagerindicator.sample:fadeLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #UnderlinePageIndicator_fades com.viewpagerindicator.sample:fades}</code></td><td></td></tr>
+     * <tr><td><code>{@link #UnderlinePageIndicator_fadeDelay com.viewpagerindicator.sample:fadeDelay}</code></td><td>Length of the delay to fade the indicator.</td></tr>
+     * <tr><td><code>{@link #UnderlinePageIndicator_fadeLength com.viewpagerindicator.sample:fadeLength}</code></td><td>Length of the indicator fade to transparent.</td></tr>
+     * <tr><td><code>{@link #UnderlinePageIndicator_fades com.viewpagerindicator.sample:fades}</code></td><td>Whether or not the selected indicator fades.</td></tr>
      * <tr><td><code>{@link #UnderlinePageIndicator_selectedColor com.viewpagerindicator.sample:selectedColor}</code></td><td></td></tr>
      * </table>
      * @see #UnderlinePageIndicator_android_background
@@ -9814,8 +9872,9 @@ public final class R {
       0x7f0200d4
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#background}
-     * attribute's value can be found in the {@link #UnderlinePageIndicator} array.
+     * <p>
+     * @attr description
+     * View background
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9829,8 +9888,9 @@ public final class R {
      */
     public static final int UnderlinePageIndicator_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#fadeDelay}
-     * attribute's value can be found in the {@link #UnderlinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Length of the delay to fade the indicator.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -9838,8 +9898,9 @@ public final class R {
      */
     public static final int UnderlinePageIndicator_fadeDelay=1;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#fadeLength}
-     * attribute's value can be found in the {@link #UnderlinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Length of the indicator fade to transparent.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -9847,8 +9908,9 @@ public final class R {
      */
     public static final int UnderlinePageIndicator_fadeLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#fades}
-     * attribute's value can be found in the {@link #UnderlinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Whether or not the selected indicator fades.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -9857,8 +9919,9 @@ public final class R {
      */
     public static final int UnderlinePageIndicator_fades=3;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#selectedColor}
-     * attribute's value can be found in the {@link #UnderlinePageIndicator} array.
+     * <p>
+     * @attr description
+     * Color of the selected line that represents the current page.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10030,12 +10093,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ViewPagerIndicator_vpiCirclePageIndicatorStyle com.viewpagerindicator.sample:vpiCirclePageIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewPagerIndicator_vpiIconPageIndicatorStyle com.viewpagerindicator.sample:vpiIconPageIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewPagerIndicator_vpiLinePageIndicatorStyle com.viewpagerindicator.sample:vpiLinePageIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewPagerIndicator_vpiTabPageIndicatorStyle com.viewpagerindicator.sample:vpiTabPageIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewPagerIndicator_vpiTitlePageIndicatorStyle com.viewpagerindicator.sample:vpiTitlePageIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewPagerIndicator_vpiUnderlinePageIndicatorStyle com.viewpagerindicator.sample:vpiUnderlinePageIndicatorStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewPagerIndicator_vpiCirclePageIndicatorStyle com.viewpagerindicator.sample:vpiCirclePageIndicatorStyle}</code></td><td>Style of the circle indicator.</td></tr>
+     * <tr><td><code>{@link #ViewPagerIndicator_vpiIconPageIndicatorStyle com.viewpagerindicator.sample:vpiIconPageIndicatorStyle}</code></td><td>Style of the icon indicator's views.</td></tr>
+     * <tr><td><code>{@link #ViewPagerIndicator_vpiLinePageIndicatorStyle com.viewpagerindicator.sample:vpiLinePageIndicatorStyle}</code></td><td>Style of the line indicator.</td></tr>
+     * <tr><td><code>{@link #ViewPagerIndicator_vpiTabPageIndicatorStyle com.viewpagerindicator.sample:vpiTabPageIndicatorStyle}</code></td><td>Style of the tab indicator's tabs.</td></tr>
+     * <tr><td><code>{@link #ViewPagerIndicator_vpiTitlePageIndicatorStyle com.viewpagerindicator.sample:vpiTitlePageIndicatorStyle}</code></td><td>Style of the title indicator.</td></tr>
+     * <tr><td><code>{@link #ViewPagerIndicator_vpiUnderlinePageIndicatorStyle com.viewpagerindicator.sample:vpiUnderlinePageIndicatorStyle}</code></td><td>Style of the underline indicator.</td></tr>
      * </table>
      * @see #ViewPagerIndicator_vpiCirclePageIndicatorStyle
      * @see #ViewPagerIndicator_vpiIconPageIndicatorStyle
@@ -10049,8 +10112,9 @@ public final class R {
       0x7f020120, 0x7f020121
     };
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#vpiCirclePageIndicatorStyle}
-     * attribute's value can be found in the {@link #ViewPagerIndicator} array.
+     * <p>
+     * @attr description
+     * Style of the circle indicator.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10061,8 +10125,9 @@ public final class R {
      */
     public static final int ViewPagerIndicator_vpiCirclePageIndicatorStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#vpiIconPageIndicatorStyle}
-     * attribute's value can be found in the {@link #ViewPagerIndicator} array.
+     * <p>
+     * @attr description
+     * Style of the icon indicator's views.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10073,8 +10138,9 @@ public final class R {
      */
     public static final int ViewPagerIndicator_vpiIconPageIndicatorStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#vpiLinePageIndicatorStyle}
-     * attribute's value can be found in the {@link #ViewPagerIndicator} array.
+     * <p>
+     * @attr description
+     * Style of the line indicator.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10085,8 +10151,9 @@ public final class R {
      */
     public static final int ViewPagerIndicator_vpiLinePageIndicatorStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#vpiTabPageIndicatorStyle}
-     * attribute's value can be found in the {@link #ViewPagerIndicator} array.
+     * <p>
+     * @attr description
+     * Style of the tab indicator's tabs.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10097,8 +10164,9 @@ public final class R {
      */
     public static final int ViewPagerIndicator_vpiTabPageIndicatorStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#vpiTitlePageIndicatorStyle}
-     * attribute's value can be found in the {@link #ViewPagerIndicator} array.
+     * <p>
+     * @attr description
+     * Style of the title indicator.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10109,8 +10177,9 @@ public final class R {
      */
     public static final int ViewPagerIndicator_vpiTitlePageIndicatorStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.viewpagerindicator.sample.R.attr#vpiUnderlinePageIndicatorStyle}
-     * attribute's value can be found in the {@link #ViewPagerIndicator} array.
+     * <p>
+     * @attr description
+     * Style of the underline indicator.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme

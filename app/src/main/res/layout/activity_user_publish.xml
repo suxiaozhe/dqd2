@@ -36,5 +36,11 @@
 
 
     </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="你还没有发表过的内容"
+        android:gravity="center"
+        android:textSize="18dp"/>
 
 </LinearLayout>

@@ -2,7 +2,6 @@ package com.example.administrator.dqd;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -30,6 +29,16 @@ import com.example.administrator.dqd.fragment.HomeFragment;
 import com.example.administrator.dqd.fragment.LotteryFragment;
 import com.example.administrator.dqd.fragment.MatchFragment;
 import com.example.administrator.dqd.fragment.SelectedFragment;
+import com.example.administrator.dqd.menu.CollectionActivity;
+import com.example.administrator.dqd.menu.FansActivity;
+import com.example.administrator.dqd.menu.FeedbackActivity;
+import com.example.administrator.dqd.menu.FollowActivity;
+import com.example.administrator.dqd.menu.NewsActivity;
+import com.example.administrator.dqd.menu.NoticeActivity;
+import com.example.administrator.dqd.menu.PublishActivity;
+import com.example.administrator.dqd.menu.SearchActivity;
+import com.example.administrator.dqd.menu.SettingActivity;
+import com.example.administrator.dqd.menu.UserInfoActivity;
 
 public class MainActivity extends FragmentActivity {
     private RadioGroup rg_main;
@@ -62,9 +71,11 @@ public class MainActivity extends FragmentActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//
 
-        MyOpenHelper myOpenHelper = new MyOpenHelper(MainActivity.this);
-        SQLiteDatabase sqLiteDatabase = myOpenHelper.getWritableDatabase();
+
+//        MyOpenHelper myOpenHelper = new MyOpenHelper(MainActivity.this);
+//        SQLiteDatabase sqLiteDatabase = myOpenHelper.getWritableDatabase();
 
         fragmentManager = getSupportFragmentManager();
 
@@ -216,7 +227,7 @@ public class MainActivity extends FragmentActivity {
         menu_news.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,NoticeActivity.class));
+                startActivity(new Intent(MainActivity.this,NewsActivity.class));
             }
         });
 
@@ -225,7 +236,8 @@ public class MainActivity extends FragmentActivity {
         menu_shop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ShopActivity.class));
+//                startActivity(new Intent(MainActivity.this, ShopActivity.class));
+                Toast.makeText(MainActivity.this,"商城功能正在披星戴月赶制中，敬请期待",Toast.LENGTH_SHORT).show();
             }
         });
 

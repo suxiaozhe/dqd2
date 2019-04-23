@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/publish_linearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/white"></LinearLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:src="@drawable/title_back_black" />
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="懂球帝"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/content_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="标题"
+                    android:gravity="center"
+                    android:textSize="24dp"
+                    android:textColor="#000000"/>
+                <TextView
+                    android:id="@+id/content_writer"
+                    android:layout_below="@id/content_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="懂球帝用户"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:id="@+id/content_time"
+                    android:layout_below="@id/content_title"
+                    android:layout_toRightOf="@id/content_writer"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04-19 18:50"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正文......"
+                android:textSize="18dp"/>
+            <ImageView
+                android:id="@+id/content_pic"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/loading"
+                android:scaleType="fitXY"/>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/middle"
+                    android:layout_centerInParent="true"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:background="@color/white"/>
+                <Button
+                    android:id="@+id/content_agree"
+                    android:layout_toLeftOf="@id/middle"
+                    android:layout_marginRight="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="171赞" />
+                <Button
+                    android:id="@+id/content_share"
+                    android:layout_toRightOf="@id/middle"
+                    android:layout_marginLeft="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20分享" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/grey"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="精彩评论"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="评论功能正在开发中，敬请期待"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

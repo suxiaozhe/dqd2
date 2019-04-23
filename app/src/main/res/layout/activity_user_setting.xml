@@ -291,13 +291,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/grey"
-                ></View>
+                />
             <RelativeLayout
-                android:id="@+id/sclear_session_setting"
+                android:onClick="click_clear_session"
+                android:id="@+id/clear_session_setting"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:clickable="true"
-                android:background="@drawable/all_press_color_selector">
+                android:background="@drawable/all_press_color_selector"
+                >
 
                 <TextView
                     android:id="@+id/setting_clear_session"
@@ -316,8 +318,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/grey"
-                ></View>
+                />
             <RelativeLayout
+                android:onClick="click_internet"
                 android:id="@+id/internet_setting"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -331,8 +334,8 @@
                     android:layout_height="wrap_content"
                     android:text="网络诊断"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="16dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
                     android:textSize="16dp"
                     />
 
@@ -341,8 +344,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="8dp"
                 android:background="@color/grey"
-                ></View>
+                />
             <RelativeLayout
+                android:onClick="click_share"
                 android:id="@+id/share_setting"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -356,8 +360,8 @@
                     android:layout_height="wrap_content"
                     android:text="推荐给好友"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="16dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
                     android:textSize="16dp"
                     />
                 <ImageView
@@ -365,7 +369,7 @@
                     android:layout_height="20dp"
                     android:src="@drawable/userinfo_arror"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginRight="16dp"/>
 
             </RelativeLayout>
@@ -373,8 +377,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/grey"
-                ></View>
+                />
             <RelativeLayout
+                android:onClick="click_evaluate"
                 android:id="@+id/evaluate_setting"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -388,8 +393,8 @@
                     android:layout_height="wrap_content"
                     android:text="给我们评分吧"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="16dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
                     android:textSize="16dp"
                     />
                 <ImageView
@@ -398,15 +403,16 @@
                     android:src="@drawable/userinfo_arror"
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="16dp"/>
+                    android:layout_marginEnd="16dp"/>
 
             </RelativeLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/grey"
-                ></View>
+                />
             <RelativeLayout
+                android:onClick="click_about"
                 android:id="@+id/about_setting"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -420,8 +426,8 @@
                     android:layout_height="wrap_content"
                     android:text="关于"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="16dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
                     android:textSize="16dp"
 
                     />
@@ -438,8 +444,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/grey"
-                ></View>
+                />
             <RelativeLayout
+                android:onClick="click_advert"
                 android:id="@+id/advert_setting"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -453,8 +460,8 @@
                     android:layout_height="wrap_content"
                     android:text="广告投放"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="16dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
                     android:textSize="16dp"
                     />
                 <ImageView
@@ -462,7 +469,7 @@
                     android:layout_height="20dp"
                     android:src="@drawable/userinfo_arror"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginRight="16dp"/>
 
             </RelativeLayout>
@@ -470,7 +477,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/grey"
-                ></View>
+               />
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
@@ -482,8 +489,8 @@
                     android:layout_height="wrap_content"
                     android:text="版本7.1.0"
                     android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="16dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
                     android:textSize="16dp"
                     />
 
@@ -492,7 +499,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/grey"
-                ></View>
+                />
 
         </LinearLayout>
 

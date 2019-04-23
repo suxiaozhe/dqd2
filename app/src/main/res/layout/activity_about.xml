@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/green"></LinearLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:src="@drawable/title_back" />
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="关于"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="懂球帝于2013年12月5日正式发布，目前已经成为全国规模及影响力标杆性的足球媒体和社区。产品在球迷中受到广泛认可。看球，更多人在用懂球帝。2018年懂球帝更是签约国际知名巨星阿扎尔和阿奎罗担任全球代言。懂球帝一直致力于为中国足球的发展贡献自己的力量."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="营业执照公示"/>
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:src="@drawable/business_license"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="广告投放"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="广告投放请联系: hezuo@dongqiudi.com"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="招聘"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="懂球帝持续招聘产品、运营、设计、研发、HR等岗位的工作人员，欢迎喜爱懂球帝、对工作有责任心的你加入我们。应聘请戳: http://jobs.dongqiudi.ourats .com/req/all"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="合作"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="合作请发送到: hezuo@dongqiudi.com"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="投稿"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="投稿请发送到: tougao@dongqiudi.com"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="版权与投诉"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="懂球帝尊重知识产权和各方的诉求，如有版权和相关其他诉求，可邮件联系我们沟通。"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="举报不良信息"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="如果您有任何关于懂球帝的问题，都可以在“设置”中的“意见反馈”留言，或者在微博联系@懂球帝，我们的工作人员会以最快的速度回复"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="其他问题"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="如果您有任何关于懂球帝的问题，都可以在“设置”中的“意见反馈”留言，或者在微博联系@懂球帝，我们的工作人员会以最快的速度回复"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

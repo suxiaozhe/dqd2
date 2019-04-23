@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/tv_title"
-            android:text="人和VS恒大：黄博文、刘弈鸣首发，布朗宁替补"
+            android:text="恒大vs山东：恒大单外援塔利斯卡首发，费莱尼先发登场"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"

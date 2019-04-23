@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#11000000"/>
+    <RelativeLayout
+        android:clickable="true"
+        android:onClick="click_shop_news"
+        android:id="@+id/shop_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/shop_service"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商城客服"
+            android:textSize="18dp"
+            android:textColor="@color/green"
+            android:layout_toRightOf="@id/iv"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@id/iv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击聊天"
+            android:layout_below="@id/shop"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv"
+            android:layout_alignLeft="@id/shop"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#11000000"/>
+
+</LinearLayout>

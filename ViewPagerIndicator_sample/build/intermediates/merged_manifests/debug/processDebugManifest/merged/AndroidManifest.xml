@@ -11,7 +11,8 @@
     <application
         android:debuggable="true"
         android:icon="@drawable/icon"
-        android:label="ViewPagerIndicator Sample" >
+        android:label="ViewPagerIndicator Sample"
+        android:testOnly="true" >
         <activity
             android:name="com.viewpagerindicator.sample.ListSamples"
             android:label="ViewPager Indicator" >

@@ -78,6 +78,7 @@
 
             </RadioGroup>
 
+            <!--  筛选漏斗 -->
             <ImageView
                 android:id="@+id/right_image"
                 android:layout_width="20dp"

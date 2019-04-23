@@ -68,6 +68,7 @@
             android:layout_marginRight="60dp"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="@color/green"
             android:layout_centerVertical="true"
             android:text="意见反馈" />
 

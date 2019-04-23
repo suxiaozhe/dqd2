@@ -10,6 +10,6 @@
     <color name="forestgreen">#00cc00</color>
     <color name="darkgreen">#006400</color>
     <color name="grey">#dcdcdc</color>
-
-
+    <color name="black">#aa000000</color>
+    <color name="dark_black">#000000</color>
 </resources>
